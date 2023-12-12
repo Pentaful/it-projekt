@@ -1,0 +1,50 @@
+.sidebar {
+    height: 100%;
+    width: 8%; 
+    position: fixed; 
+    z-index: 1; /* top lock */
+    top: 0;
+    left: 0;
+    background-color: rgb(33, 43, 75);
+    overflow-x: hidden; /* scroll aus */
+    padding-top: 5vw; 
+    transition: 0.5s; 
+    opacity: 0.5;
+}
+
+.sidebar a {
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    color: #818181;
+    font-size: 1.45vw;
+    white-space: nowrap;
+}
+
+.sidebar a:hover:not(.hidden) {
+    color: #f1f1f1;
+    opacity: 1;
+}
+
+.sidebar:hover a {
+    opacity: 1;
+    transition: opacity 0.15s ease-in-out;
+}
+
+.sidebar:hover {
+    opacity: 1;
+}
+
+.main {
+     width: 92%;
+     margin-left: 8%;
+}
+
+.sidebar .hidden {
+    color: transparent;
+    text-decoration: none;  
+}

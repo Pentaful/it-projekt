@@ -1,0 +1,40 @@
+ /* The sidebar menu */
+ body {
+    background-image: url("media/background.jpg");
+    margin: 0;
+   }
+
+    .main {
+      width: 95%;
+      margin-left: 5%;
+      margin: 0;
+    }
+
+    .text-div-center {
+      width: 100%; /* Make the text div take up the full width of its container */
+      background: #071622;
+      padding: 15px;
+        }
+
+    .text-div-center h1,
+    .text-div-center h3 {
+        text-align: center;
+        color: #fff;
+        font-family: "Audiowide", sans-serif;
+    }
+    .preview h3,
+    .preview h1 {
+      color: #fff;
+      padding: 10px;
+      margin-left: 10px;
+    }
+    .preview {
+      background: #1b5788;
+    }
+
+    #background_1 {
+      position: fixed;
+      top: 0;
+      z-index: 0;
+      width: 100%;
+    }

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+  <title>Raspberry Pi Server Setup</title>
+  <link rel="icon" type="image/x-icon" href="/media/favicon.ico">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <script>
+    var timestamp = new Date().getTime();
+    document.write('<script src="/sidebar/script.js?v=' + timestamp + '"><\/script>');
+  </script>
+
+  <div id="sidebarContainer"></div>
+
+  <div id="main">
+      <h1>Informationen über die Website</h1>
+
+      <h2>Server-Hardware und Betriebssystem</h2>
+      <ul>
+        <li>Raspberry Pi mit Linux Distribution</li>
+        <li>Rasbian OS auf mikroSD-Karte</li>
+        <li>64-bit SoC Quad-Core CPU mit 1.8GHz</li>
+        <li>Grafikeinheit mit 500MHz</li>
+        <li>4GB LPDDR4-3200 RAM</li>
+        <li>WLAN, LAN, Bluetooth und BLE</li>
+        <li>GPIO-Pins</li>
+      </ul>
+
+      <h2>Netzwerkkonfiguration</h2>
+      <ul>
+        <li>Apache2 als Webserver</li>
+        <li>Modifizierte Apache2 Config erlaubt erheblich niedrigere Latenz (~250ms => ~30ms)</li>
+        <li>Geöffnete Ports: 22 (SSH), 80 (HTTP), 443 (HTTPS), 3000 (Node.js) und 8443</li>
+        <li>Verwendung von DDNS durch DuckDNS</li>
+        <li>Automatische Aktualisierung der IP des Routers durch DDNS, wenn sie sich durch einen Neustart ändert</li>
+        <li>SSL-Zertifikat durch Certbot konfiguriert (=>HTTPS)</li>
+      </ul>
+
+      <h2>Features und Datenbanken</h2>
+      <ul>
+        <li>MariaDB als Datenbanksystem</li>
+        <li>SQL als Datenbanksprache</li>
+        <li>Mehrere Datensätze zur klaren Trennung von Daten</li>
+        <li>Kommunikation von Webseite zu Datenbank über PHP</li>
+      </ul>
+
+      <h2>Development</h2>
+      <ul>
+        <li>Visual Studio Code mit SSH-Erweiterung für die Remote-Entwicklung</li>
+        <li>SSH-Verbindung zum Server für das normale Linux-Terminal</li>
+      </ul>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="cache-control" content="max-age=0" />
+    <title>Ticket erstellen - Ticketsystem MSO</title>
+    <link rel="icon" type="image/x-icon" href="/media/favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <script>    
+        var timestamp = new Date().getTime();
+        document.write('<script src="/sidebar/script.js?v=' + timestamp + '"><\/script>');
+    </script>
+
+    <div id="sidebarContainer"></div>
+    
+    <div id="main" class="main">
+        <form action="process-ticket.php" method="POST">
+            <label for="fname">Vorname:</label><br>
+            <input type="text" name="fname"><br>
+
+            <label for="lname">Nachname:</label><br>
+            <input type="text" name="lname"><br>
+
+            <label for="subject">Problem:</label><br>
+            <input type="text" name="subject"><br><br>
+
+            <input type="submit" value="Ticket absenden">
+        </form> 
+    </div>
+</body>
+</html>

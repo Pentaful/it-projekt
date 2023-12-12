@@ -1,0 +1,102 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    margin-left: 8%;
+}
+
+#main {
+    max-width: 30%;
+    margin: 2vw auto; /* center container */
+    background-color: #fff;
+    padding: 0.6vw;
+    border-radius: 0.42vw;
+    box-shadow: 0 0 0.521vw rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 0.4vw;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 0.2vw;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* styles for tickets.php */
+.main-tickets {
+    position: fixed;
+    margin-right: 4vw;
+    width: 95%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    margin-top: 4vw;
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 0.8vw;
+}
+
+th, td {
+    border: 0.1vw solid #ddd;
+    padding: 0.5vw;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+#main-sent {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+i {
+    font-style: italic;
+    color: #007BFF; /* blue col for italic text */
+}
+
+/* add. styles for the buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 12px;
+    margin: 4px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
